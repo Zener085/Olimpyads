@@ -16,7 +16,7 @@
 Выведите одно целое число: минимальное суммарное время, которое потребуется кроликам, чтобы съесть морковки при каком-то их разделении.
 '''
 
-# It's not working, I must fix that.
+# This code is not working, I must fix it.
 
 n, k = map(int, input().split())
 a = []
