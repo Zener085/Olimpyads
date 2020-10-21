@@ -16,33 +16,28 @@
 Выведите одно целое число: минимальное суммарное время, которое потребуется кроликам, чтобы съесть морковки при каком-то их разделении.
 '''
 
-# This code is not working, I must fix it.
+from heapq import *
 
-n, k = map(int, input().split())
-a = []
+n,k=map(int,input().split(" "))
 
-x = input().split()
 
-for i in range(n):
-    a.append(int(x[i]))
+def val(l,nums):
+    unit=l//nums
+    extra=l-unit*nums
+    return (nums-extra)*unit*unit+extra*(unit+1)*(unit+1)
     
+pq=[]
+arr=list(map(int,input().split(" ")))
 
-while len(a) != k:
-    a.sort()
-    x, y = 0, 0
-    if a[-1] % 2 == 0:
-        x = a[-1] // 2
-        y = x
-    else:
-        x = (a[-1] + 1) // 2
-        y = x - 1
-    a.pop(len(a) - 1)
-    a.append(x)
-    a.append(y)
+total=0
+for x in range(n):
+    total+=arr[x]*arr[x]
+    heappush(pq,(-val(arr[x],1)+val(arr[x],2),arr[x],2))
 
-a.sort()
-x = 0
-for i in a:
-    x += i ** 2
+for x in range(k-n):
+    temp=heappop(pq)
+    total+=temp[0]
+    a,b=temp[1],temp[2]
+    heappush(pq,(-val(a,b)+val(a,b+1),a,b+1))
 
-print(x)
+print(total)
