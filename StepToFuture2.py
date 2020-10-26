@@ -1,3 +1,6 @@
+'''
+From step to future
+'''
 a = int(input())
 b = int(input())
 
