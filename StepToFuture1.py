@@ -1,3 +1,6 @@
+'''
+From step to future
+'''
 n = int(input())
 a = []
 
