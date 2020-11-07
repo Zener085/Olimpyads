@@ -1,6 +1,5 @@
 '''
 From Step to future
-It doesn't work
 '''
 n = int(input())
 a = {}
