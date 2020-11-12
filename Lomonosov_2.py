@@ -4,3 +4,5 @@ if N % 2 == 0:
     print(res)
 else:
     print('0')
+
+    
