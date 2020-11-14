@@ -1,4 +1,3 @@
-'''
 D = str(input())
 L = int(input())
 N = input()
