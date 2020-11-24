@@ -1,4 +1,5 @@
 # It doesn't work like I want.
+#Idk why
 def position(p):    
     a = []
     for i in range(len(p)):
