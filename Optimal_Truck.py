@@ -1,5 +1,5 @@
 # It's doesn't work.
-# It can't do it, it's creation of hell
+# It can't do it, it's creation of hell.
 n = int(input())
 a = []
 list_m = []
