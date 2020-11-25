@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main() {
 	int n, a, x, m;
 	cin >> n;
