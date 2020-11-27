@@ -1,4 +1,4 @@
-# It doesn't work like I want.
+# It doesn't work like I want
 #Idk why.
 def position(p):    
     a = []
