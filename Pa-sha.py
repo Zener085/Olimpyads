@@ -11,4 +11,4 @@ while len(text) < 9125:
     text += str(i)
     i += 1
 
-print(text[:912)
+print(text[:91)
