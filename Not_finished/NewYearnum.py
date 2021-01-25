@@ -27,12 +27,10 @@ n=8079, то число n нельзя представить в виде сум
 
 
 def if20or21(a: int) -> str:
-    if a % 2021 != 0:
-        while (a % 2020 != 0) and (a > 2021):
-            a -= 2021
-        return 'YES' if a % 2020 == 0 else 'NO'
-    else:
-        return 'YES'
+    for j in range(a // 2020 + 5):
+        if a - (2020 * j) >= 0 and (a - 2020 * j) % 2021 == 0:
+            return 'YES'
+    return 'NO'
 
 
 t = int(input())
